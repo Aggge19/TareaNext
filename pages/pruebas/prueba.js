@@ -11,6 +11,7 @@ export default function useEffectAdvancedPage() {
     return (
         <>
             <ComponentUE/>
+            
         </>
     )
 }
