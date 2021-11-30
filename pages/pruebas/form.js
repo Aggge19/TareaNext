@@ -1,12 +1,12 @@
 import React from 'react';
 
-import formulario from '../../components/dinamic/Formulario';
+import Formulario from '../../components/dinamic/Formulario';
 
 function App() {
      
     return(
         <div className="container mt-5">
-            <Formulario />
+            <Formulario/>
         </div>
     );
     
