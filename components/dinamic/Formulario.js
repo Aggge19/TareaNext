@@ -8,7 +8,11 @@ const Formulario = () =>{
     })
 
     const handleInputChange = (event) => {
-        console.log("funciona");
+        console.log(event.target.value);
+        setDatos({
+            ...datos,
+            [event.target.name] : event.target.value
+        })
     }
     
     return(
@@ -31,6 +35,9 @@ const Formulario = () =>{
 
                 <button type="submit">Enviar</button>
             </form>
+            <br />
+            <h4>{datos.nombre}</h4>
+            <h4>{datos.apellido}</h4>
         </Fragment>
     );
 }   
